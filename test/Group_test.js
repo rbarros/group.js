@@ -32,60 +32,59 @@
     ok(this.group, 'instance');
   })
 
-  test('1 group', function(){
+  test('012345679 = ["012345679"]', function(){
     expect(1);
-    deepEqual(new Group(666666666), [{"caracter": "6", "group":  "666666666"}]);
+    deepEqual(new Group("012345679"), ["012345679"]);
   });
 
-  test('2 group', function(){
+  test('666666666 = ["666666666"]', function(){
     expect(1);
-    deepEqual(new Group(166666666), [{"caracter": "1", "group":  "1"}, {"caracter": "6", "group":  "66666666"}]);
+    deepEqual(new Group(666666666), ["666666666"]);
   });
 
-  test('3 group', function(){
+  test('166666666 = ["1","66666666"]', function(){
     expect(1);
-    deepEqual(new Group(123123123), [{"caracter": "1", "group":  "111"}, {"caracter": "2", "group":  "222"}, {"caracter": "3", "group":  "333"}]);
+    deepEqual(new Group(166666666), ["1","66666666"]);
   });
 
-  /*
-  module('jQuery#awesome', {
-    // This will run before each test in this module.
-    setup: function() {
-      this.elems = $('#qunit-fixture').children();
-    }
-  });
-
-  test('is chainable', function() {
+  test('025323232 = ["025","323232"]', function(){
     expect(1);
-    // Not a bad test to run on collection methods.
-    strictEqual(this.elems.awesome(), this.elems, 'should be chainable');
+    deepEqual(new Group("025323232"), ["025","323232"]);
   });
 
-  test('is awesome', function() {
+  test('125252525 = ["1","25252525"]', function(){
     expect(1);
-    strictEqual(this.elems.awesome().text(), 'awesome0awesome1awesome2', 'should be awesome');
+    deepEqual(new Group("125252525"), ["1","25252525"]);
   });
 
-  module('jQuery.awesome');
-
-  test('is awesome', function() {
-    expect(2);
-    strictEqual($.awesome(), 'awesome.', 'should be awesome');
-    strictEqual($.awesome({punctuation: '!'}), 'awesome!', 'should be thoroughly awesome');
-  });
-
-  module(':awesome selector', {
-    // This will run before each test in this module.
-    setup: function() {
-      this.elems = $('#qunit-fixture').children();
-    }
-  });
-
-  test('is awesome', function() {
+  test('047777777 = ["04","7777777"]', function(){
     expect(1);
-    // Use deepEqual & .get() when comparing jQuery objects.
-    deepEqual(this.elems.filter(':awesome').get(), this.elems.last().get(), 'knows awesome when it sees it');
+    deepEqual(new Group("047777777"), ["04","7777777"]);
   });
-  */
+
+  test('58123123 = ["58","123123"]', function(){
+    expect(1);
+    deepEqual(new Group(58123123), ["58","123123"]);
+  });
+
+  test('aaabbb = ["aaa","bbb"]', function(){
+    expect(1);
+    deepEqual(new Group("aaabbb"), ["aaa","bbb"]);
+  });
+
+  test('123123123 = ["123123123"]', function(){
+    expect(1);
+    deepEqual(new Group(123123123), ["123123123"]);
+  });
+
+  test('101230123 = ["1","01230123"]', function(){
+    expect(1);
+    deepEqual(new Group(101230123), ["1","01230123"]);
+  });
+
+  test('225252525 = ["2","25252525"]', function(){
+    expect(1);
+    deepEqual(new Group(225252525), ["2","25252525"]);
+  });
 
 }(jQuery));
