@@ -3,20 +3,20 @@
   "title": "Group",
   "description": "Find group of characters in a string.",
   "version": "1.0.0",
-  "homepage": "https://github.com/ramon/group.js",
+  "homepage": "https://github.com/rbarros/group.js",
   "author": {
     "name": "Ramon Barros",
     "email": "contato@ramon-barros.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ramon/group.js.git"
+    "url": "git://github.com/rbarros/group.js.git"
   },
-  "bugs": "https://github.com/ramon/group.js/issues",
+  "bugs": "https://github.com/rbarros/group.js/issues",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/ramon/group.js/blob/master/LICENSE-MIT"
+      "url": "https://github.com/rbarros/group.js/blob/master/LICENSE-MIT"
     }
   ],
   "dependencies": {
