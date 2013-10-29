@@ -33,4 +33,15 @@ _(Coming soon)_
  * new Group('123123123')  = ["123123123"]
 
 ## Release History
-_(Nothing yet)_
+
+* **v1.1.0** - 2013-10-29
+   - Add divide groups.
+
+* **v1.0.2** - 2013-10-29
+   - fix bug order by grupo_maior.
+
+* **v1.0.1** - 2013-10-25
+   - Fix bug return group.
+
+* **v1.0.0** - 2013-10-21
+   - Initial release.

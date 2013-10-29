@@ -87,4 +87,14 @@
     deepEqual(new Group(225252525), ["2","25252525"]);
   });
 
+  test('225252525 divide = ["2","25","25","25","25"]', function(){
+    expect(1);
+    deepEqual(new Group(225252525, true), ["2","25","25","25","25"]);
+  });
+
+  test('123123123 divide = ["123","123","123"]', function(){
+    expect(1);
+    deepEqual(new Group(123123123, true), ["123","123","123"]);
+  });
+
 }(jQuery));

@@ -2,7 +2,7 @@
   "name": "Group",
   "title": "Group",
   "description": "Find group of characters in a string.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/rbarros/group.js",
   "author": {
     "name": "Ramon Barros",
