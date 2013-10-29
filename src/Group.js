@@ -152,6 +152,9 @@
                         }
                     }
                 }
+                
+                grupo_maior.sort();
+
                 group = "";
                 for (x in grupo_menor) {
                     if (grupo_menor.hasOwnProperty(x)) {
